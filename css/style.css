@@ -58,6 +58,76 @@ a {
     color: var(--main-bg-color)
 }
 
+/****** Navbar ***********/
+
+.navbar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.navbar img {
+    height: 25px;
+    margin-right: auto;
+}
+
+.menunavbar ul{
+    display: flex;
+    list-style-type: none;
+    margin-top: auto;
+}
+
+.menunavbar ul li{
+    margin-right: 15px;
+}
+
+
+/****** Text top and search bar ***********/
+
+.thesearchbar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    
+}
+
+.thesearchbar i {
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    text-align: center;
+    background-color: #d9d9d9;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 100%;
+
+}
+
+.thesearchbar input[type="text"] {
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+    border: none;
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+    height: 28px;
+}
+
+.thesearchbar input[type="submit"] {
+    background-color: #0065FC;
+    color: #F2F2F2;
+    padding: 10px 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin-left: -5px;
+}
+
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
