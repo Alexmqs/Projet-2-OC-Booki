@@ -26,7 +26,7 @@
                     <img src="images/logo/Booki.png" alt="Logo Booki">
                     <div class="menunavbar">
                         <ul>
-                            <li><a href="#hebergement" class="hebergement-nav">Hébergement</a></li>
+                            <li class="hebergement-nav"><a href="#hebergement">Hébergement</a></li>
                             <li class="activites-nav"><a href="#activites">Activités</a></li>
                         </ul>
                     </div>
@@ -56,12 +56,13 @@
                     <i class="fa-solid fa-location-dot" style="color: #000000;"></i>
                 </div>
 
-                <a href="#" class="searchbar">
+                <div class="searchbar">
                     <input type="text" name="location" id="search" placeholder="Marseille, France">
-                </a>
+                </div>
 
                 <div class="search-btn">
-                    <span>Rechercher <i class="fa-solid fa-money-bill-wave"></i></span>
+                    <span>Rechercher </span>
+                    <i id ="search" class="fa-lg fa-solid fa-magnifying-glass"></i>
                     
                 </div>
 
@@ -96,7 +97,7 @@
             <section class="hebergements">
 
                 <div class="hebergements-title">
-                    <h2 class="section-title">Hébergement à Marseille</h2>
+                    <h2 id="hebergement" class="section-title">Hébergement à Marseille</h2>
                 </div>
                 <div class="hebergements-cards">
 
@@ -119,8 +120,6 @@
                                 </div>    
                             </article>
                     </a>
-
-
 
                     <a href="#">
                         <article class="card">
@@ -297,7 +296,7 @@
      <!-------------Activiter------------->   
      <div class="activity">
         <div>
-            <h2 class="section-title">Activités à Marseille</h2>
+            <h2 id="activites" class="section-title">Activités à Marseille</h2>
         </div>
 
         <div class="activity-card">

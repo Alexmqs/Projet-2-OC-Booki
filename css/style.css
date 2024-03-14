@@ -61,7 +61,7 @@ a {
 
 
 /****** Navbar ***********/
-
+ 
 .navbar {
     display: flex;
     align-items: center;
@@ -80,26 +80,18 @@ a {
     margin-top: auto;
     height: 35px;
     gap: 68px;
-    align-items: center;
-
+    
 }
 
 .menunavbar ul li{
-    margin-left: 10px;
+    display: flex;
+    align-items: center;
 }
 
-.hebergement-nav {
+
+.menunavbar li:hover {
     color: #0065FC;
-    position: relative; /* Nécessaire pour le positionnement absolu */
-}
-
-.hebergement-nav::before {
-    content: '';
-    position: absolute;
-    top: -10px; 
-    width: 100%;
-    height: 1px; 
-    background-color: #0065FC; 
+    border-top: #0065FC solid 2px;
 }
 
 
@@ -110,9 +102,8 @@ a {
 
 /****** Text top ***********/
 
-.texttop h1, .texttop p {
-    margin: 5px;
-    text-align: left;
+.texttop h1 {
+   margin-bottom: -10px;
 }
 
 
@@ -130,8 +121,6 @@ a {
 
 
 /****** search bar ***********/
-
-
 .logo-searchbar-btn {
     display: flex;
     margin-top: 20px;
@@ -143,37 +132,37 @@ a {
     background-color: #d9d9d9;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    padding: 10px 10px;
+    padding: 15px 15px;
     justify-content: center;
 }
 
 
-.logo-searchbar-btn .searchbar {
+.searchbar {
     display: flex;
     align-items: center;
     border-top: 2px solid #d9d9d9;
     border-bottom: 2px solid #d9d9d9;
-
+    padding: 0px 22px;
 }
 
 
-.logo-searchbar-btn .searchbar input[type="text"] {
+.searchbar input[type="text"] {
     border: none; 
     outline: none; 
     text-align: center;
 }
 
-.logo-searchbar-btn .searchbar input[type="text"]::placeholder {
+.searchbar input[type="text"]::placeholder {
     color: black;
     font-size: 16px;
     font-weight: 700;
     line-height: 21px;
 }
 
-.logo-searchbar-btn .search-btn {
+.search-btn {
     display: flex;
     align-items: center;
-    padding: 0 15px;
+    padding: 0px 25px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     background-color: #0065FC;
@@ -183,7 +172,8 @@ a {
     font-weight: 700;
 }
 
-.logo-searchbar-btn .search-btn i {
+.search-btn i{
+    color: #F2F2F2;
     display: none;
 }
 
@@ -201,7 +191,6 @@ a {
     font-weight: 700;
     line-height: 21px;
 }
-
 
 .filterandp .filter ul{
     margin: 10px;
@@ -242,8 +231,6 @@ a {
     font-weight: 400;
     line-height: 19px;
 }
-
-
 
 .filter-info span i {
     display: inline-block;
@@ -289,9 +276,6 @@ a {
 
 .hebergements-cards .card {
     margin-top: 33px;
-    width: 240px;
-    height: 200px;
-
 }
 
 .hebergements-cards img {
@@ -477,5 +461,5 @@ a {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    .search-btn  {}
 }
